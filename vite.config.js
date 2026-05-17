@@ -8,7 +8,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects.html'),
-        projectDetails: resolve(__dirname, 'project-details.html')
+        projectDetails: resolve(__dirname, 'project-details.html'),
+        notFound: resolve(__dirname, '404.html'),
+        error: resolve(__dirname, 'error.html')
       }
     }
   }
