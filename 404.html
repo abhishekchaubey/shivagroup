@@ -79,22 +79,52 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Animated Drafting Compass / Architectural Icon */
+        .drafting-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .structure-path {
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: drawPath 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            transform-origin: center;
+        }
+
+        @keyframes drawPath {
+            0% { stroke-dashoffset: 400; }
+            45%, 55% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -400; }
+        }
+
+        .blueprint-line {
+            opacity: 0.3;
+            stroke-dasharray: 4,4;
+        }
+
+        .architect-node {
+            animation: pingNode 2s ease-in-out infinite alternate;
+            transform-origin: center;
+        }
+
+        @keyframes pingNode {
+            0% { transform: scale(0.7); opacity: 0.4; }
+            100% { transform: scale(1.3); opacity: 1; }
+        }
+
         .error-code {
-            font-size: 8rem;
+            font-size: 5rem;
             font-family: var(--font-heading);
             font-weight: 800;
             line-height: 1;
             background: linear-gradient(135deg, var(--white) 30%, var(--accent) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             letter-spacing: -2px;
-            animation: pulseCode 3s ease-in-out infinite;
-        }
-
-        @keyframes pulseCode {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.03); }
         }
 
         .error-title {
@@ -108,8 +138,43 @@
         .error-message {
             font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             line-height: 1.6;
+        }
+
+        /* Countdown Timer Progress Bar */
+        .redirect-notice {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .countdown-bar {
+            width: 100px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .countdown-progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: var(--accent);
+            animation: shrinkBar 10s linear forwards;
+        }
+
+        @keyframes shrinkBar {
+            from { width: 100%; }
+            to { width: 0%; }
         }
 
         .error-actions {
@@ -130,6 +195,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1rem;
+            gap: 0.5rem;
         }
 
         .btn-error-primary {
@@ -143,6 +209,14 @@
             color: var(--white);
             transform: translateY(-3px);
             box-shadow: 0 15px 30px rgba(0, 168, 232, 0.4);
+        }
+
+        .btn-error-primary:hover svg {
+            transform: translateX(-4px);
+        }
+
+        .btn-error-primary svg {
+            transition: transform 0.3s ease;
         }
 
         .btn-error-secondary {
@@ -159,13 +233,61 @@
 </head>
 <body>
     <div class="error-container">
+        <!-- SVG Architectural Drafting Animation -->
+        <svg class="drafting-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+            <!-- Blueprint grids -->
+            <line class="blueprint-line" x1="10" y1="85" x2="90" y2="85" />
+            <line class="blueprint-line" x1="10" y1="50" x2="90" y2="50" />
+            <line class="blueprint-line" x1="50" y1="10" x2="50" y2="90" />
+            
+            <!-- Drawing structure path -->
+            <path class="structure-path" d="M25,85 L25,45 L50,20 L75,45 L75,85 Z M25,45 L75,45 M50,20 L50,85" />
+            
+            <!-- Drafting nodes -->
+            <circle class="architect-node" cx="50" cy="20" r="3" fill="var(--accent)" stroke="none" />
+            <circle class="architect-node" cx="25" cy="45" r="3" fill="var(--accent)" stroke="none" />
+            <circle class="architect-node" cx="75" cy="45" r="3" fill="var(--accent)" stroke="none" />
+            <circle class="architect-node" cx="25" cy="85" r="3" fill="var(--accent)" stroke="none" />
+            <circle class="architect-node" cx="75" cy="85" r="3" fill="var(--accent)" stroke="none" />
+        </svg>
+
         <div class="error-code">404</div>
         <h1 class="error-title">Oops! Page Not Found</h1>
         <p class="error-message">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        
+        <!-- Interactive Countdown -->
+        <div class="redirect-notice">
+            <span>Redirecting to Home in <strong id="countdown">10</strong>s</span>
+            <div class="countdown-bar">
+                <div class="countdown-progress"></div>
+            </div>
+        </div>
+
         <div class="error-actions">
-            <a href="./index.html" class="btn-error btn-error-primary">Go Back Home</a>
+            <a href="./index.html" class="btn-error btn-error-primary">
+                <!-- Back arrow icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Go Back Home
+            </a>
             <a href="./projects.html" class="btn-error btn-error-secondary">View Our Projects</a>
         </div>
     </div>
+
+    <script>
+        // Automatic Countdown & Redirect
+        let count = 10;
+        const countdownEl = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            count--;
+            countdownEl.innerText = count;
+            if (count <= 0) {
+                clearInterval(timer);
+                window.location.href = './index.html';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
