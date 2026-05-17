@@ -2,7 +2,7 @@ export const Navbar = `
 <nav class="navbar glass">
   <div class="container nav-content">
     <a href="/" class="logo">
-      <img src="/assets/logo.jpg" alt="ShivaGroups Logo" class="logo-img">
+      <img src="./assets/logo.jpg" alt="ShivaGroups Logo" class="logo-img">
       <span class="logo-text">SHIVA<span>GROUPS</span></span>
     </a>
     <ul class="nav-links">

@@ -8,7 +8,7 @@ export const Clients = `
     <div class="clients-grid">
       <div class="client-card glass">
         <div class="client-image-container">
-          <img src="/src/assets/client_1.png" alt="Client 1" class="client-avatar">
+          <img src="./assets/client_1.png" alt="Client 1" class="client-avatar">
         </div>
         <p class="feedback">"ShivaGroups exceeded our expectations with Style Bazar. Their attention to detail in industrial planning is unmatched."</p>
         <div class="client-info">
@@ -18,7 +18,7 @@ export const Clients = `
       </div>
       <div class="client-card glass">
         <div class="client-image-container">
-          <img src="/src/assets/client_1.png" alt="Client 2" class="client-avatar">
+          <img src="./assets/client_1.png" alt="Client 2" class="client-avatar">
         </div>
         <p class="feedback">"The residential project at Manduadih was handled with extreme professionalism. Highly recommended for Vastu-based planning."</p>
         <div class="client-info">
@@ -28,7 +28,7 @@ export const Clients = `
       </div>
       <div class="client-card glass">
         <div class="client-image-container">
-          <img src="/src/assets/client_1.png" alt="Client 3" class="client-avatar">
+          <img src="./assets/client_1.png" alt="Client 3" class="client-avatar">
         </div>
         <p class="feedback">"Their interior design work at Ashoak Vastralay transformed our space completely. Premium look and feel!"</p>
         <div class="client-info">

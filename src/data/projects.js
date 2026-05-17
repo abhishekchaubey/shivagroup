@@ -8,12 +8,12 @@ export const projectsData = [
     client: "Private Client",
     area: "15,000 sq. ft.",
     status: "Completed",
-    mainImage: "/assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.55 PM.jpeg",
+    mainImage: "./assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.55 PM.jpeg",
     gallery: [
-      "/assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.55 PM.jpeg",
-      "/assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.56 PM.jpeg",
-      "/assets/Residential/3D Elevation/WhatsApp Image 2023-03-06 at 00.51.22.jpeg",
-      "/assets/Residential/3D Elevation/WhatsApp Image 2023-03-06 at 00.51.25.jpeg"
+      "./assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.55 PM.jpeg",
+      "./assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.56 PM.jpeg",
+      "./assets/Residential/3D Elevation/WhatsApp Image 2023-03-06 at 00.51.22.jpeg",
+      "./assets/Residential/3D Elevation/WhatsApp Image 2023-03-06 at 00.51.25.jpeg"
     ]
   },
   {
@@ -25,14 +25,14 @@ export const projectsData = [
     client: "Commercial Group",
     area: "25,000 sq. ft.",
     status: "Under Construction",
-    mainImage: "/assets/Commercial/Interior/Jewellery_1.jpeg",
+    mainImage: "./assets/Commercial/Interior/Jewellery_1.jpeg",
     gallery: [
-      "/assets/Commercial/Interior/Jewellery_1.jpeg",
-      "/assets/Commercial/Interior/Jewellery_2.jpeg",
-      "/assets/Commercial/Interior/Jewellery_3.jpeg",
-      "/assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.51 PM.jpeg",
-      "/assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM (1).jpeg",
-      "/assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM.jpeg"
+      "./assets/Commercial/Interior/Jewellery_1.jpeg",
+      "./assets/Commercial/Interior/Jewellery_2.jpeg",
+      "./assets/Commercial/Interior/Jewellery_3.jpeg",
+      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.51 PM.jpeg",
+      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM (1).jpeg",
+      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM.jpeg"
     ]
   },
   {
@@ -44,12 +44,12 @@ export const projectsData = [
     client: "Hindustan Unilever",
     area: "50,000 sq. ft.",
     status: "Completed",
-    mainImage: "/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
+    mainImage: "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
     gallery: [
-      "/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
-      "/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16 (1).jpeg",
-      "/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16.jpeg",
-      "/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.48.jpeg"
+      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
+      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16 (1).jpeg",
+      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16.jpeg",
+      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.48.jpeg"
     ]
   },
   {
@@ -61,12 +61,12 @@ export const projectsData = [
     client: "Ashoak Vastralay",
     area: "5,000 sq. ft.",
     status: "Completed",
-    mainImage: "/src/assets/interior.png",
+    mainImage: "./assets/interior.png",
     gallery: [
-      "/src/assets/interior.png",
-      "/src/assets/luxury_interior.png",
-      "/src/assets/hero_innovation.png",
-      "/src/assets/commercial.png"
+      "./assets/interior.png",
+      "./assets/luxury_interior.png",
+      "./assets/hero_innovation.png",
+      "./assets/commercial.png"
     ]
   }
 ];

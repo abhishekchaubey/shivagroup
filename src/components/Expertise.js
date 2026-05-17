@@ -3,7 +3,7 @@ export const Expertise = `
   <div class="container">
     <div class="expertise-flex">
       <div class="expertise-image animate-fade">
-        <img src="/src/assets/interior.png" alt="Interior Expertise">
+        <img src="./assets/interior.png" alt="Interior Expertise">
       </div>
       <div class="expertise-content">
         <h2 class="section-title">Our Expertise</h2>
