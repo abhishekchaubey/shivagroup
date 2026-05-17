@@ -2,7 +2,7 @@
 .hero-section {
   height: 100vh;
   position: relative;
-  background: url('/shivagroup/assets/hero_innovation.png') no-repeat center center/cover;
+  background: url('/assets/hero_innovation.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
