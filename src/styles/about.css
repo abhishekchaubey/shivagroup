@@ -1,0 +1,78 @@
+/* About Styles */
+.about-section {
+  background-color: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: var(--gray-800);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.calendly-integration {
+  background-color: var(--gray-100);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border-left: 5px solid var(--primary);
+}
+
+.calendly-integration h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.calendly-integration p {
+  margin-bottom: 1.5rem;
+  color: var(--gray-800);
+}
+
+.contact-info-card {
+  padding: 3rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+}
+
+.contact-info-card h3 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-list li {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.contact-list strong {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.2rem;
+  color: var(--accent);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,75 @@
+/* Expertise Styles */
+.expertise-section {
+  background-color: var(--white);
+}
+
+.expertise-flex {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.expertise-image {
+  flex: 1;
+}
+
+.expertise-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-content {
+  flex: 1.2;
+}
+
+.expertise-desc {
+  font-size: 1.1rem;
+  color: var(--gray-800);
+  margin-bottom: 2.5rem;
+}
+
+.flow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flow-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.flow-step:hover {
+  background-color: var(--gray-100);
+  transform: translateX(10px);
+}
+
+.step-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  min-width: 40px;
+}
+
+.flow-step h4 {
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.flow-step p {
+  color: var(--gray-800);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .expertise-flex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

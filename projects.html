@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | ShivaGroups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/navbar.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <style>
+        .projects-header {
+            padding: 10rem 2rem 5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: var(--white);
+            transition: var(--transition-smooth);
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-details {
+            padding: 1.5rem;
+        }
+
+        .project-details h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-category {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .project-feedback {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--gray-800);
+            border-top: 1px solid var(--gray-200);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-cta:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="navbar-placeholder"></header>
+
+    <div class="projects-header">
+        <h1 class="animate-fade">Our Projects Portfolio</h1>
+        <p class="animate-fade">Showcasing excellence across Residential, Commercial, and Industrial sectors.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Residential Showcase -->
+        <div class="project-item">
+            <img src="/assets/Residential/3D Elevation/WhatsApp Image 2022-05-05 at 3.21.55 PM.jpeg" alt="Residential Project">
+            <div class="project-details">
+                <span class="project-category">Residential</span>
+                <h3>Manduadih Residential Project</h3>
+                <p>A premium Vastu-based residential complex with modern amenities.</p>
+                <p class="project-feedback">"ShivaGroups delivered our dream home with perfect planning." - Client</p>
+                <a href="project-details.html?id=residential" target="_blank" class="btn-cta">View Project Details</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img src="/assets/Commercial/Interior/Jewellery_1.jpeg" alt="Commercial Project">
+            <div class="project-details">
+                <span class="project-category">Commercial</span>
+                <h3>Hathi Bazar Complex</h3>
+                <p>A state-of-the-art commercial building designed for maximum utility.</p>
+                <p class="project-feedback">"Highly intuitive design and professional execution." - Client</p>
+                <a href="project-details.html?id=commercial" target="_blank" class="btn-cta">View Project Details</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img src="/assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg" alt="Industrial Project">
+            <div class="project-details">
+                <span class="project-category">Industrial</span>
+                <h3>Hindustan Unilever Warehouse</h3>
+                <p>Industrial building at Ramnagar Varanasi, optimized for logistics.</p>
+                <p class="project-feedback">"The efficiency of the design significantly improved our workflow." - Client
+                </p>
+                <a href="project-details.html?id=industrial" target="_blank" class="btn-cta">View Project Details</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <img src="/src/assets/interior.png" alt="Interior Project">
+            <div class="project-details">
+                <span class="project-category">Interior Design</span>
+                <h3>Ashoak Vastralay</h3>
+                <p>Modern interior redesign for a premium retail experience in Harhua.</p>
+                <p class="project-feedback">"The ambiance created by the team is just spectacular." - Client</p>
+                <a href="project-details.html?id=interior" target="_blank" class="btn-cta">View Project Details</a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script type="module">
+        import { Navbar } from './src/components/Navbar.js';
+        import { Footer } from './src/components/Footer.js';
+        document.querySelector('#navbar-placeholder').innerHTML = Navbar;
+        document.querySelector('#footer-placeholder').innerHTML = Footer;
+
+        // Mobile Toggle Handler (Duplicate for standalone page)
+        const setupMobileToggle = () => {
+            const toggle = document.querySelector('.mobile-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (toggle && navLinks) {
+                toggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    toggle.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        toggle.classList.remove('active');
+                    });
+                });
+            }
+        };
+        setupMobileToggle();
+    </script>
+</body>
+
+</html>
