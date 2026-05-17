@@ -16,7 +16,7 @@ export const About = `
              class="btn-primary">Schedule on Calendly</a>
         </div>
       </div>
-      <div class="contact-info-card glass">
+      <div class="contact-info-card">
         <h3>Contact Us</h3>
         <ul class="contact-list">
           <li><strong>Email:</strong> pandey.subodh5@gmail.com</li>
