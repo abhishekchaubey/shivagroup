@@ -30,9 +30,9 @@ export const projectsData = [
       "./assets/Commercial/Interior/Jewellery_1.jpeg",
       "./assets/Commercial/Interior/Jewellery_2.jpeg",
       "./assets/Commercial/Interior/Jewellery_3.jpeg",
-      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.51 PM.jpeg",
-      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM (1).jpeg",
-      "./assets/Commercial/Exterior/WhatsApp Image 2024-05-24 at 1.48.52 PM.jpeg"
+      "./assets/Commercial/Exterior/commercial_ext_1.png",
+      "./assets/Commercial/Exterior/commercial_ext_2.png",
+      "./assets/Commercial/Exterior/commercial_ext_3.png"
     ]
   },
   {
@@ -44,12 +44,12 @@ export const projectsData = [
     client: "Hindustan Unilever",
     area: "50,000 sq. ft.",
     status: "Completed",
-    mainImage: "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
+    mainImage: "./assets/Industrial/3D View/industrial_1.png",
     gallery: [
-      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.15.jpeg",
-      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16 (1).jpeg",
-      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.16.jpeg",
-      "./assets/Industrial/3D View/WhatsApp Image 2023-03-06 at 00.51.48.jpeg"
+      "./assets/Industrial/3D View/industrial_1.png",
+      "./assets/Industrial/3D View/industrial_2.png",
+      "./assets/Industrial/3D View/industrial_3.png",
+      "./assets/Industrial/3D View/industrial_4.png"
     ]
   },
   {
